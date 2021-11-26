@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+/* 
+   font-family: 'Oswald', sans-serif;
+   font-family: 'Raleway', sans-serif;
+
+   color values:
+       #96746b
+       #c7a17a
+       #312a26
+       #ffffff
+
+*/
+
+
+/* reset declaration */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+}
+.wrapper{
+    margin: auto;
+    width: 100%;
+}
+/* header section */
+.nav{
+    /* border: 4px solid red; */
+    overflow: auto;
+    width: 85%;
+    margin: 0 auto;
+}
+.nav h1{
+    /* border: 2px dashed green; */
+    float: left;
+    
+}
+.nav h1 a{
+    color: #96746b ;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.nav ul{
+    /* border: 2px dashed black; */
+    float: right;
+    margin-top: 1em;
+}
+.nav ul li{
+    display: inline;
+    margin-left: 1em;
+}
+.nav ul li a{
+    color: #312a26;
+    font-family:'Raleway', sans-serif; 
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/* Banner section */
+
+.banner{
+    /* border: 4px solid red; */
+    height: 670px;
+    background-image: url(../images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    position: relative;
+}
+.banner-text{
+    /* border: 2px dashed  #ffffff; */
+    position: absolute;
+    left: 7.5%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.banner-text h2{
+    color:#c7a17a ;
+    font-size: 4em;
+    text-transform: uppercase;
+} 
+.banner-text h2 span{
+    color: #96746b;
+}
+.banner-text p{
+    color:  #ffffff;
+}
+.banner-text a{
+    background-color:  #312a26;
+    color: #ffffff;
+    font-family:'Raleway', sans-serif; 
+    padding: 1em;
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/* ads 1 section */
+.ads{
+    /* border: 4px solid red; */
+    width: 85%;
+    margin: 4em auto;
+    overflow: auto;
+}
+.ads-items{
+    /* border: 2px dashed blue; */
+    height: 350px;
+    float: left;
+    width: 49%;
+    position: relative;
+}
+.ads-item1{
+    background-image: url(../images/ads-img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    margin-right: 2%;
+}
+.ads-item2{
+    background-image: url(../images/ads-img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+}
+.ads-text{
+    /* border: 2px dashed #ffffff; */
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 50%;
+}
+.ads-text h3{
+    color: #ffffff;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px #312a26;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+.ads-text a{
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #312a26;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* merchandise section */
+
+.merch{
+    /* border: 4px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+.section-header{
+    /* border: 2px dashed blue; */
+    text-align: center;
+}
+.section-header span{
+    color: #c7a17a;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.section-header h2{
+    color: #312a26;
+    text-transform: uppercase;
+}
+.section-header hr{
+    height: 2px;
+    width: 30%;
+    margin: auto;
+    background-color: #c7a17a;
+}
+.merch-gallery{
+    /* border: 2px dashed black; */
+    overflow: auto;
+    margin-top: 2em;
+}
+.merch-items img{
+    width: 100%;
+}
+
+.merch-items h3{
+    color: #312a26;
+    text-transform: capitalize;
+}
+.merch-items{
+    /* border: 2px solid green; */
+    float: left;
+    width: 24.25%;
+    /* margin-right: 1%; */
+}
+/* .merch-items4,.merch-item8{
+    margin-right: 0;
+} */
+.merch-item1,.merch-item2,.merch-item3,.merch-item5,.merch-item6,.merch-item7{
+    margin-right: 1%;
+}
+.merch-item5,.merch-item6,.merch-item7,.merch-item8{
+    margin-top: 1% ;
+}
+.discount{
+    /* border: 4px solid red; */
+    height: 300px;
+    background-image: url(../images/discount-img.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+.discount-text{
+    /* border: 2px dashed #ffffff; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    text-align: center;
+}
+.discount-text span{
+    color: #ffffff;
+    font-style: italic;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+.discount-text h2{
+    color: #ffffff;
+    font-size: 2em;
+    text-shadow: 3px 3px 5px #312a26;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+.discount-text a{
+    color: #312a26;
+    text-transform:capitalize;
+    font-family:'Raleway', sans-serif;
+    font-weight:600;
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration:none;
+    background-color:rgba(255,255,255,0.5);
+    padding:1em;
+}
+/* merchandise sale  same layout with merchandise*/
+.merch-item9,.merch-item10,.merch-item11{
+    margin-right: 1%;
+}
+/* ads 2 section */
+.ads-item3{
+    background-image: url(../images/ads-img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+.ads-item4{
+    background-image: url(../images/ads-img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    margin-bottom: 2%;
+}
+.ads-item5{
+    background-image: url(../images/ads-img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    margin-right: 2%;
+}
+.ads-item6{
+    background-image: url(../images/ads-img6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+}
+
+/* reservation section */
+.reservation{
+    /* border: 4px solid red; */
+    width: 85%;
+    margin: 4em auto;
+}
+.section-header{
+    /* border: 2px dashed blue; */
+    text-align: center;
+}
+form{
+    overflow: auto;
+}
+.form-group{
+    /* border: 2px dashed yellow; */
+    width: 49%;
+    float: left;
+    background-color: #f2f2f2;
+    padding: 1em;
+}
+.form-group1{
+    margin-right: 2%;
+    
+}
+input,select,textarea{
+    width: 100%;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.form-group p,.form-group h3{
+    text-align: center;
+}
+
+.reservation-time{
+    text-align: center;
+}
+.reservation-time input{
+    width:auto;
+}
+
+.form-group h3::after{
+    content: "";
+    display: block;
+    background-image: url(../images/reservation-cards.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: contain;
+    /* border: 2px solid red; */
+    width: 150px;
+    height: 30px;
+    margin: auto;
+}
+.agreement input{
+    width: auto;
+}
+
+#submit{
+    background-color:#c7a17a;
+}
+
+/* footer area */
+.footer{
+    /* border:2px dashed red; */
+    background-image:url(../images/footer-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center ;
+    padding: 2em 0;
+}
+.footer-content{
+    /* border: 2px solid white; */
+    overflow: auto;
+    width: 85%;
+    margin: 0 auto;
+}
+.footer-widgets{
+    /* border: 2px dashed yellow; */
+    float: left;
+    width: 25%;
+    color: white;
+}
+.footer-widgets p{
+    color: #c7a17a;
+}
+.footer-widgets input{
+    width: auto;
+}
+.footer h3{
+    margin-bottom: 1em;
+}
+#btn-search{
+    background-color: #c7a17a;
+}
+.last{
+    margin-top:1em;
+}
+
+.footer-social{
+    /* border: 2px solid; */
+    background-color: #19100f;
+    text-align: center;
+    overflow: auto;
+    color: #f2f2f2;
+}
+.social-widgets{
+    /* border: 2px dashed white; */
+    float: left;
+    width: 33.33%;
+}
+.social-widgets img{
+    width:1.5em;
+}
+.social-widgets p{
+    padding:0.3em 0 ;
+}
+
+.btn-top{
+    background-color: #312a26;
+    color: #ffffff;
+    padding: .5em;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    text-decoration: none;
+}
